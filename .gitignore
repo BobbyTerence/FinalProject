@@ -6,3 +6,6 @@
 
 #ignore the temp directory
 temp/
+
+#ignore all zipped files
+*.zip
