@@ -90,6 +90,12 @@ main {
   color: #fff;
 }
 
+/* Styling for the 'Heading' class */
+.heading {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
 /* Styling content on Home Page */
 .bio {
   padding: 3%;
@@ -114,15 +120,20 @@ main {
   color: #000;
 }
 
-/* Styling content on Family and Friends Page */
-.family {
+/* Styling content on Family and Friends Page : Mobile */
+.boxes {
   overflow: auto;
   display: grid;
   grid-template-rows: [motha] 1fr [fatha] 1fr [sista] 1fr [brotha] 1fr;
   grid-row-gap: 3%;
 }
 
-.family div {
+#fam-img {
+  border: none;
+  background: inherit;
+}
+
+.boxes div {
   background: #fff;
   color: #000;
   border: 3px solid #28282B;
@@ -130,25 +141,66 @@ main {
   padding: 5px;
 }
 
-.family div:nth-of-type(odd) {
+.boxes div:nth-of-type(odd) {
   background: #7393B3;
   color: #000;
 }
 
 #motha {
   grid-row: motha;
+  display: grid;
+  grid-template-columns: [img] 2fr [info] 3fr;
+  grid-row-gap: 0;
+}
+
+#motha #fam-img {
+  grid-column: img;
+}
+
+#motha p {
+  grid-column: info;
 }
 
 #fatha {
   grid-row: fatha;
+  display: grid;
+  grid-template-columns: [img] 2fr [info] 3fr;
+}
+
+#fatha #fam-img {
+  grid-column: img;
+}
+
+#fatha p {
+  grid-column: info;
 }
 
 #sista {
   grid-row: sista;
+  display: grid;
+  grid-template-columns: [img] 2fr [info] 3fr;
+}
+
+#sista #fam-img {
+  grid-column: img;
+}
+
+#sista p {
+  grid-column: info;
 }
 
 #brotha {
   grid-row: brotha;
+  display: grid;
+  grid-template-columns: [img] 2fr [info] 3fr;
+}
+
+#brotha #fam-img {
+  grid-column: img;
+}
+
+#brotha p {
+  grid-column: info;
 }
 
 /* Styling content on the contact page */
@@ -244,6 +296,35 @@ footer p a {
   tr:nth-child(odd) {
     background-color: #ccc;
     color: #000;
+  }
+
+  /* Styling content on Family and Friends Page : Tablet & Desktop */
+  .boxes {
+    overflow: visible;
+    grid-template-columns: [left-grid] 1fr [right-grid] 1fr;
+    grid-template-rows: [first] 1fr [second] 1fr;
+    grid-column-gap: 3%;
+    grid-row-gap: 3%;
+  }
+
+  #motha {
+    grid-column: left-grid;
+    grid-row: first;
+  }
+
+  #fatha {
+    grid-column: right-grid;
+    grid-row: first;
+  }
+
+  #sista {
+    grid-column: left-grid;
+    grid-row: second;
+  }
+
+  #brotha {
+    grid-column: right-grid;
+    grid-row: second;
   }
 }
 
