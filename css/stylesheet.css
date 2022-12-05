@@ -121,7 +121,7 @@ main {
 }
 
 /* Styling content on Family and Friends Page : Mobile */
-.boxes {
+.family {
   overflow: auto;
   display: grid;
   grid-template-rows: [motha] 1fr [fatha] 1fr [sista] 1fr [brotha] 1fr;
@@ -133,7 +133,7 @@ main {
   background: inherit;
 }
 
-.boxes div {
+.family div {
   background: #fff;
   color: #000;
   border: 3px solid #28282B;
@@ -141,7 +141,7 @@ main {
   padding: 5px;
 }
 
-.boxes div:nth-of-type(odd) {
+.family div:nth-of-type(odd) {
   background: #7393B3;
   color: #000;
 }
@@ -299,7 +299,7 @@ footer p a {
   }
 
   /* Styling content on Family and Friends Page : Tablet & Desktop */
-  .boxes {
+  .family {
     overflow: visible;
     grid-template-columns: [left-grid] 1fr [right-grid] 1fr;
     grid-template-rows: [first] 1fr [second] 1fr;
@@ -367,14 +367,15 @@ footer p a {
 
   .box {
     display: grid;
-    grid-template-columns: [bio] 1fr [tableSchedule] 2fr;
+    grid-template-columns: [bio] 1fr [table-schedule] 2fr;
   }
 
   .bio {
     border: none;
+    grid-column: bio;
   }
 
   #table {
-    grid-column: tableSchedule;
+    grid-column: table-schedule;
   }
 }
