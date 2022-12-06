@@ -78,23 +78,23 @@
 
         <fieldset class = "pizza-questions">
           <legend> Pizza Questions </legend>
-          <label for = "pet"> Do you like Pizza? </label> <br>
-            <input type = "radio" id = "yes" name = "pet" value = "yes">
-              <label for = "yes"> Yes </label>
-            <input type = "radio" id = "no" name = "pet" value = "no">
-              <label for = "no"> No </label> <br>
+          <label for = "pet"> Do you like Pizza? </label>
+            <label for = "yes"> <input type = "radio" id = "yes" name = "pet" value = "yes">
+              Yes </label>
+            <label for = "no"><input type = "radio" id = "no" name = "pet" value = "no">
+              No </label>
 
-          <label for = "pizza-toppings"> What is your favorite pizza toppings? </label> <br>
-            <input type = "checkbox" id = "pepperoni" name = "pizza-toppings" value = "pepperoni">
-              <label for = "pepperoni"> Pepperoni </label>
-            <input type = "checkbox" id = "sausage" name = "pizza-toppings" value = "sausage">
-              <label for = "sausage"> Sausage </label>
-            <input type = "checkbox" id = "pineapple" name = "pizza-toppings" value = "pineapple">
-              <label for = "pineapple"> Pineapple </label>
-            <input type = "checkbox" id = "niether" name = "pizza-toppings" value = "niether">
-              <label for = "niether"> Niether </label> <br>
+          <label for = "pizza-toppings"> What is your favorite pizza toppings? </label>
+            <label for = "pepperoni"> <input type = "checkbox" id = "pepperoni" name = "pizza-toppings" value = "pepperoni">
+              Pepperoni </label>
+            <label for = "sausage"> <input type = "checkbox" id = "sausage" name = "pizza-toppings" value = "sausage">
+              Sausage </label>
+            <label for = "pineapple"> <input type = "checkbox" id = "pineapple" name = "pizza-toppings" value = "pineapple">
+              Pineapple </label>
+            <label for = "niether"> <input type = "checkbox" id = "niether" name = "pizza-toppings" value = "niether"> 
+              Niether </label>
             
-          <label for = "pizza-place"> What is your favorite Pizza Place? </label> <br>
+          <label for = "pizza-place"> What is your favorite Pizza Place? </label>
             <select name = "pizza-place" id = "pizza-place">
               <option value = "dominos"> Dominos </option>
               <option value = "pizza-hut"> Pizza Hut </option>
@@ -104,16 +104,18 @@
               <option value = "prison-brews"> Prison Brews </option>
               <option value = "arris"> Arris' Pizza </option>
               <option value = "papa-murphy's"> Papa Muphy's </option>
-            </select> <br>
+            </select>
 
           <label for = "pizza-suggestions"> If you were to recommend a pizza to me, where would I get it,
-            and what are its toppings? </label> <br>
+            and what are its toppings? </label>
             <textarea id = "pizza-suggestions" name = "pizza-suggestions" rows = "5"
               cols="35"> </textarea>
         </fieldset>
 
-        <input type = "submit" id = "submit" value = "Submit" class = "btn">
-        <input type = "reset" id = "reset" value = "Reset" class = "btn">
+        <div id = "button">
+          <input type = "submit" id = "submit" value = "Submit" class = "btn">
+          <input type = "reset" id = "reset" value = "Reset" class = "btn">
+        </div>
       </form>
 
     </main>

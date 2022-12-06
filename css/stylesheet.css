@@ -96,6 +96,10 @@ main {
   margin-bottom: 3%;
 }
 
+.box {
+  margin-top: 0;
+}
+
 /* Styling content on Home Page */
 .bio {
   padding: 3%;
@@ -203,6 +207,48 @@ main {
   grid-column: info;
 }
 
+/* Styling content on the interests and goals pages */
+.wrapper {
+  padding: 3%;
+  background: #36454F;
+}
+
+.wrapper h2 {
+  color: #000;
+  text-align: center;
+  margin-top: 3px;
+}
+
+.wrapper div {
+  background: #fff;
+  color: #000;
+  border: 3px solid #28282B;
+  border-radius: 9px;
+  padding: 5px;
+  margin-bottom: 8px;
+}
+
+.wrapper div:nth-of-type(even) {
+  background: #7393B3;
+  color: #000;
+}
+
+/* Specific styling for goals page */
+#economic ul {
+  list-style: disc;
+  margin-left: 8vw;
+}
+
+#economic ul ul {
+  list-style: circle;
+  margin-left: 4vw;
+}
+
+#economic ul ul ul {
+  list-style: square;
+  margin-left: 4vw;
+}
+
 /* Styling content on the contact page */
 .contact {
   display: grid;
@@ -222,6 +268,43 @@ main {
 
 .contact .non-prof {
   grid-row: non-prof;
+}
+
+#form {
+  margin-top: 2%;
+  background-color: #f2f2f2;
+  padding: 2%;
+}
+
+#form h2 {
+  text-align: center;
+}
+
+/* Style rules for form elements */
+fieldset, input, select, textarea {
+  margin-bottom: 2%;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+label {
+  display: block;
+  padding-top: 3%;
+}
+
+form select {
+  margin-top: 1vh;
+}
+
+form textarea {
+  margin-top: 1vh;
+}
+
+#button {
+  text-align: center;
 }
 
 /* Style Rules for Footer */
