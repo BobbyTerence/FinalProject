@@ -29,6 +29,16 @@ img {
   display: none
 }
 
+* {
+  box-sizing: border-box;
+}
+
+/* General styling for links */
+a {
+  text-decoration: none;
+  color: #006633;
+}
+
 /* Start styling for the mobile (default) viewport */
 
 /* Header */
@@ -36,11 +46,13 @@ header {
   top: 0;
   background: #28282B;
   height: 190px;
-  align-content: center;
+  align-content: left;
 }
 
 header img {
   margin: 0 auto;
+  width: 50%;
+  height: auto;
 }
 
 /* Temporary Header Rules for Text Header */
@@ -150,15 +162,20 @@ main {
   color: #000;
 }
 
+#fam-img img {
+  height: 50%;
+  width: auto;
+}
+
 #motha {
   grid-row: motha;
   display: grid;
   grid-template-columns: [img] 2fr [info] 3fr;
-  grid-row-gap: 0;
 }
 
 #motha #fam-img {
   grid-column: img;
+  grid-row: 1 / span 5;
 }
 
 #motha p {
@@ -173,6 +190,7 @@ main {
 
 #fatha #fam-img {
   grid-column: img;
+  grid-row: 1 / span 5;
 }
 
 #fatha p {
@@ -187,6 +205,7 @@ main {
 
 #sista #fam-img {
   grid-column: img;
+  grid-row: 1 / span 5;
 }
 
 #sista p {
@@ -201,6 +220,7 @@ main {
 
 #brotha #fam-img {
   grid-column: img;
+  grid-row: 1 / span 5;
 }
 
 #brotha p {
@@ -334,6 +354,11 @@ footer p a {
     padding-bottom: 2%;
   }
 
+  header img {
+    width: 25%;
+    height: auto;
+  }
+
   /* Change the Nav section to make it more friendly for tablet users */
   nav li {
       border-top: none;
@@ -381,13 +406,18 @@ footer p a {
     color: #000;
   }
 
-  /* Styling content on Family and Friends Page : Tablet & Desktop */
+  /* Styling content on family and friends page : Tablet & Desktop */
   .family {
     overflow: visible;
     grid-template-columns: [left-grid] 1fr [right-grid] 1fr;
     grid-template-rows: [first] 1fr [second] 1fr;
     grid-column-gap: 3%;
     grid-row-gap: 3%;
+  }
+
+  #fam-img img {
+    width: 100%;
+    height: auto;
   }
 
   #motha {
@@ -409,6 +439,32 @@ footer p a {
     grid-column: right-grid;
     grid-row: second;
   }
+
+  /* Styling for interests page : Tablet-Desktop */
+  .wrapper .YTVid {
+    text-align: center;
+  }
+
+  .wrapper .YTVid:nth-of-type(2) {
+    background-color: #fff;
+  }
+
+  iframe {
+    margin: auto;
+  }
+
+  /* Styling for goals page  : Tablet-Desktop */
+  #economic ul {
+    margin-left: 4vw;
+  }
+  
+  #economic ul ul {
+    margin-left: 2vw;
+  }
+  
+  #economic ul ul ul {
+    margin-left: 2vw;
+  }
 }
 
 @media screen and (min-width: 1015px), print {
@@ -417,6 +473,11 @@ footer p a {
       width: 25%;
       float: left;
       padding-bottom: 0;
+  }
+
+  header img {
+    width: 50%;
+    height: auto;
   }
 
   /* Desktop Viewport: Style rules for nav area */
